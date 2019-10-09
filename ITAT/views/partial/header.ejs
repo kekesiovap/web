@@ -1,0 +1,19 @@
+<section id="pictures-header">
+  <picture class="site-banner">
+    <img src="/images/itat2019-banner.png" alt="ITAT banner" width="631" height="156">
+  </picture>
+  <picture class="header-foto">
+    <img src="/images/foto-zornicka.png" alt="Hotel Zornička" width="209" height="157">
+  </picture>
+</section>
+  <h1 id="header-title">
+    ITAT 19. ROČNÍK,<br> INFORMAČNÉ TECHNOLÓGIE
+  </h1>
+
+<nav>
+  <ul>
+    <% headerMenu.forEach((item) => { %>
+    <%- linkGenerator(item, page);%>
+    <% }) %>
+  </ul>
+</nav>
